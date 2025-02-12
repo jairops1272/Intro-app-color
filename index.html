@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector de Color RGB</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <div class="container text-center">
+        <nav class="navbar mb-5 navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Aplicacion de pruebas de color</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+        <h2>Selector de Color RGB</h2>
+        <div class="color-box mt-3" id="colorBox"></div>
+        <p class="mt-2">Código Hex: <span id="hexCode">#000000</span></p>
+        <input type="color" id="colorPicker" class="form-control mt-3">
+        <div class="sliders mt-4">
+            <label>Rojo</label>
+            <input type="range" id="red" min="0" max="255" value="0" class="form-range">
+            <input type="number" id="redInput" min="0" max="255" value="0" class="form-control">
+            <label>Verde</label>
+            <input type="range" id="green" min="0" max="255" value="0" class="form-range">
+            <input type="number" id="greenInput" min="0" max="255" value="0" class="form-control">
+            <label>Azul</label>
+            <input type="range" id="blue" min="0" max="255" value="0" class="form-range">
+            <input type="number" id="blueInput" min="0" max="255" value="0" class="form-control">
+        </div>
+        <footer class="bg-dark text-white text-center py-3 mt-5">
+            <p class="mb-0">&copy; 2025. Todos los derechos reservados. Jairo Pineda Sanchez.</p>
+        </footer>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
